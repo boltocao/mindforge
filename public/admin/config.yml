@@ -1,0 +1,21 @@
+backend:
+  name: github
+  repo: SEU_USUARIO_GITHUB/mindforge
+  branch: main
+
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "posts"
+    label: "Posts"
+    folder: "content/posts"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Resumo", name: "excerpt", widget: "text" }
+      - { label: "Data", name: "date", widget: "datetime", format: "YYYY-MM-DD" }
+      - { label: "Categoria", name: "category", widget: "string" }
+      - { label: "Autor", name: "author", widget: "string", default: "Equipe MindForge" }
+      - { label: "Conteúdo", name: "body", widget: "markdown" }

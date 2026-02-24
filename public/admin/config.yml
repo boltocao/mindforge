@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: SEU_USUARIO_GITHUB/mindforge
+  repo: boltocao/mindforge
   branch: main
 
 media_folder: "public/uploads"
